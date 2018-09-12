@@ -26,12 +26,6 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
         bottomNavigationBar: _bottomBar(),
         backgroundColor: Colors.grey,
-        floatingActionButtonLocation:
-        FloatingActionButtonLocation.centerDocked,
-        floatingActionButton: FloatingActionButton(child: Icon(Icons.add),onPressed: null,
-
-        ),
-
         body:
             ListView(shrinkWrap: true, padding: EdgeInsets.all(0.0), children: [
           Container(
@@ -68,8 +62,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Widget _bottomBar() {
     return BottomAppBar(
-      shape: CircularNotchedRectangle(),
-      notchMargin: 4.0,
       child: Row(
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
