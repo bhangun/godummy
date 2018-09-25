@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: new ThemeData(
         primaryColor: Colors.white,
-        //primarySwatch: Colors.yellow,
+        fontFamily: 'NeoSansPro'
       ),
       home: new MyHomePage(title: 'Gojek'),
     );

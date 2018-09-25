@@ -1,0 +1,49 @@
+
+const String GO_RIDE_ICON="assets/ojek_orange.png";
+const String GO_CAR_ICON="assets/ojek_orange.png";
+const String GO_BLUEBIRD_ICON="assets/ojek_orange.png";
+const String GO_FOOD_ICON="assets/ojek_orange.png";
+const String GO_SEND_ICON="assets/ojek_orange.png";
+const String GO_DEALS_ICON="assets/ojek_orange.png";
+const String GO_PULSA_ICON="assets/ojek_orange.png";
+const String GO_POINS_ICON="assets/ojek_orange.png";
+const String GO_NEARBY_ICON="assets/ojek_orange.png";
+const String GO_BILLS_ICON="assets/ojek_orange.png";
+const String GO_SHOPS_ICON="assets/ojek_orange.png";
+const String GO_MART_ICON="assets/ojek_orange.png";
+
+const String GO_HISTORY_ICON="assets/go_history.png";
+const String GO_SETTING_ICON="assets/go_setting.png";
+const String GO_TOPUP_ICON="assets/go_topup.png";
+const String GO_RECEIVE_ICON="assets/go_receive.png";
+const String GO_TRANSFER_ICON="assets/go_transfer.png";
+const String GO_WITHDRAW_ICON="assets/go_withdraw.png";
+const String GO_VOUCHER_ICON="assets/go_voucher.png";
+const String GO_HELP_ICON="assets/go_help.png";
+const String GO_SCAN_ICON="assets/go_scan.png";
+const String GO_MORE_ICON="assets/go_more.png";
+const String GO_MORE2_ICON="assets/go_more2.png";
+
+const String GO_RIDE="GO-RIDE";
+const String GO_CAR="GO-CAR";
+const String GO_BLUEBIRD="GO-BLUEBIRD";
+const String GO_FOOD="GO-FOOD";
+const String GO_SEND="GO-SEND";
+const String GO_DEALS="GO-DEALS";
+const String GO_PULSA="GO-PULSA";
+const String GO_POINS="GO-POINTS";
+const String GO_NEARBY="GO-NEARBY";
+const String GO_BILLS="GO-BILLS";
+const String GO_SHOPS="GO-SHOPS";
+const String GO_MART="GO-MART";
+
+const String GO_HISTORY="History";
+const String GO_SETTING="Settings";
+const String GO_TOPUP="Top Up";
+const String GO_RECEIVE="Receive";
+const String GO_TRANSFER="Transfer";
+const String GO_WITHDRAW="Withdraw";
+const String GO_VOUCHER="Voucher";
+const String GO_HELP="Help";
+const String GO_SCAN="Scan QR";
+const String GO_MORE="More";
