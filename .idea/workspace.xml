@@ -7,79 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee4b8558-6f9a-4f37-a5a8-80bdfeefe142" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/lib/components/go_button.dart" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/lib/components/go_icon.dart" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/lib/util/constants.dart" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/assets/atas.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/batal.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/bintang.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/bluebird.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/bola.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/bola_kecil.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/buka_kotak.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/bulat_orange_hijau.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/bus.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/callcenter.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/car.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/car_linkaran.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/chat.png " afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/chat_big.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/chat_hijau.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/check.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/clip.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/cros_putih.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/cross.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/cycle_contrast.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/cycle_white.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/dolar.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/dompet.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/dompet_putih.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/eJ.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/eye.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/fb_white.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/find.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/NeoSansPro_Medium.ttf" afterPath="$PROJECT_DIR$/fonts/NeoSansPro-Medium.ttf" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/Roboto-Medium.ttf" afterPath="$PROJECT_DIR$/fonts/Roboto-Medium.ttf" />
-      <change beforePath="$PROJECT_DIR$/assets/gagang_telp.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/gagang_telp_biru.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/gembok.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/go_bluebird.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/go_helm.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/go_ride.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/gobird_place.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/gobox.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/gobox_red.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/gocar.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/gojek.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/gojek2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/gojek_logo_white.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/gojek_shadow.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/gojek_up" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/gojek_white_big.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/gojek_wifi.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/gomed.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/gopay.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/gopay_logo.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/gopoint.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/gotix.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/gugel_biru.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/home_white.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/instagram.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/kiri.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/kue.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/landscape.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/love.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/love_abu.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/love_white.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/lp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/ojek_orange.png" afterPath="$PROJECT_DIR$/assets/ojek_orange.png" />
-      <change beforePath="$PROJECT_DIR$/lib/go_appbar.dart" afterPath="$PROJECT_DIR$/lib/components/go_appbar.dart" />
-      <change beforePath="$PROJECT_DIR$/lib/go_button.dart" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/lib/home.dart" afterPath="$PROJECT_DIR$/lib/home.dart" />
-      <change beforePath="$PROJECT_DIR$/lib/label_below_icon.dart" afterPath="$PROJECT_DIR$/lib/components/label_below_icon.dart" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" afterPath="$PROJECT_DIR$/lib/main.dart" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" afterPath="$PROJECT_DIR$/pubspec.yaml" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -400,6 +328,14 @@
       <option name="presentableId" value="Default" />
       <updated>1532660228769</updated>
     </task>
+    <task id="LOCAL-00001" summary="tambah icon">
+      <created>1537870687059</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1537870687059</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -441,6 +377,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="tambah icon" />
+    <option name="LAST_COMMIT_MESSAGE" value="tambah icon" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
