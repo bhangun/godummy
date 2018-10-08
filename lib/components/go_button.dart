@@ -4,8 +4,9 @@ class GoButton extends StatelessWidget {
   final String label;
   final String img;
   final Color borderColor = Color.fromARGB(255, 242, 242, 244);
+  Function func;
 
-  GoButton({@required this.label, this.img});
+  GoButton({@required this.label, this.img, this.func});
 
   BorderSide _border() {
     return BorderSide(color: borderColor, width: 1.0, style: BorderStyle.solid);
@@ -27,22 +28,19 @@ class GoButton extends StatelessWidget {
                         bottom: _border(),
                         left: _border()),
                   ),
-                  width: 80.0,
-                  height: 80.0,
+                  width: 65.0,
+                  height: 65.0,
                   child: InkWell(
                       highlightColor: Colors.grey[10],
                       borderRadius:
                           BorderRadius.all(Radius.elliptical(19.0, 25.0)),
                       splashColor: Colors.grey,
-                      onTap: () {
-                        /*setState(() {
-              sampleData.forEach((element) => element.isSelected = false);
-              sampleData[index].isSelected = true;
-            });*/
+                      onTap: (){
+
                       },
                       child: Image(
                         image: AssetImage(img),
-                        width: 60.0,
+                        width: 30.0,
                       ))))),
       Text(label)
     ]);

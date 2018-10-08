@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gojekdummy/components/go_icon.dart';
+import 'package:gojekdummy/components/snackmore.dart';
 import 'package:gojekdummy/util/constants.dart';
 import 'package:gojekdummy/components/go_button.dart';
 
@@ -13,31 +14,34 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  String text = "asads";
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        elevation: 0.0,
-        actions: <Widget>[
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            mainAxisSize: MainAxisSize.max,
-            children: [
-              Image.asset("assets/gopay_white.png"),
-              Row(
-                children: <Widget>[
-                  Image.asset("assets/point_small.png"),
-                  _point()
-                ],
-              )
-            ],
-          )
-        ],
-      ),
+        appBar: AppBar(
+          elevation: 0.0,
+          actions: <Widget>[
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              mainAxisSize: MainAxisSize.max,
+              children: [
+                Image.asset("assets/gopay_white.png"),
+                Row(
+                  children: <Widget>[
+                    Image.asset("assets/point_small.png"),
+                    _point()
+                  ],
+                )
+              ],
+            )
+          ],
+        ),
         bottomNavigationBar: _bottomBar(),
         backgroundColor: Color.fromARGB(255, 242, 242, 244),
         body:
             ListView(shrinkWrap: true, padding: EdgeInsets.all(0.0), children: [
+          Text(text),
           Container(
               decoration: BoxDecoration(color: Colors.white),
               child: Container(
@@ -57,7 +61,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    GoButton(label: GO_SEND, img: GO_SEND_ICON,),
+                    GoButton(
+                      label: GO_SEND,
+                      img: GO_SEND_ICON,
+                    ),
                     GoButton(label: GO_CAR, img: GO_CAR_ICON),
                     GoButton(label: GO_BILLS, img: GO_BILLS_ICON),
                     GoButton(label: GO_MORE, img: GO_MORE_ICON)
@@ -73,40 +80,34 @@ class _MyHomePageState extends State<MyHomePage> {
         ]));
   }
 
-
-  Widget _point(){
+  Widget _point() {
     return Container(
       child: Column(
-        children: <Widget>[
-          Text("745 pts")
-        ],
+        children: <Widget>[Text("745 pts")],
       ),
       decoration: BoxDecoration(
-
           borderRadius: BorderRadius.circular(50.0),
-          color: Color.fromRGBO(255, 247, 235, 1.0)),//Colors.blueAccent[400]),
+          color: Color.fromRGBO(255, 247, 235, 1.0)), //Colors.blueAccent[400]),
       margin: EdgeInsets.all(16.0),
     );
   }
 
-  _banner() {
+  Widget _banner() {
     return Container(
       padding: EdgeInsets.only(top: 10.0),
       height: 150.0,
       child: Column(
-        children: <Widget>[
-          _topBanner(),
-          _mainBanner()
-        ],
+        children: <Widget>[_topBanner(), _mainBanner()],
       ),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(5.0),
-          color: Color.fromRGBO(51, 102, 204, 1.0)),//Colors.blueAccent[400]),
+          color: Color.fromRGBO(51, 102, 204, 1.0)),
+      //Colors.blueAccent[400]),
       margin: EdgeInsets.all(16.0),
     );
   }
 
-  Widget _topBanner(){
+  Widget _topBanner() {
     return Container(
       height: 40.0,
       child: Row(
@@ -114,7 +115,7 @@ class _MyHomePageState extends State<MyHomePage> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           Image.asset("assets/gopay_white.png"),
-          Text("Rp 120.000",style: TextStyle(color: Colors.white))
+          Text("Rp 120.000", style: TextStyle(color: Colors.white))
         ],
       ),
       decoration: BoxDecoration(
@@ -123,7 +124,7 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
-  Widget _mainBanner(){
+  Widget _mainBanner() {
     return Row(
       mainAxisSize: MainAxisSize.max,
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -131,7 +132,8 @@ class _MyHomePageState extends State<MyHomePage> {
         GoIcon(GO_TRANSFER, GO_TRANSFER_ICON),
         GoIcon(GO_SCAN, GO_SCAN_ICON),
         GoIcon(GO_TOPUP, GO_TOPUP_ICON),
-        GoIcon(GO_MORE, GO_MORE_ICON)
+        //  GoIcon(GO_MORE, GO_MORE_ICON)
+        Snackmenu(),
       ],
     );
   }
