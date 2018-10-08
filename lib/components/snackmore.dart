@@ -9,32 +9,13 @@ class Snackmenu extends StatelessWidget {
         IconButton(
             icon: Image.asset(GO_MORE_ICON),
             onPressed: () {
-             /* Navigator.of(context, rootNavigator: true).push(
+              Navigator.of(context, rootNavigator: true).push(
                 new MaterialPageRoute<bool>(
 
                   fullscreenDialog: false,
                   builder: (BuildContext context) => new Tab3Dialog(),
                 ),
-              );*/
-
-   /*           Scaffold.of(context).showBottomSheet((context) {
-                print(context.toString());
-                _banner();
-              });*/
-   print(context..toString());
-
-              Scaffold.of(context).showSnackBar(SnackBar(
-                backgroundColor: Colors.white,
-                content: _menu(),
-
-                action: SnackBarAction(
-                  label: 'Undo',
-                  onPressed: () {
-                    // Some code to undo the change!
-                  },
-                ),
-              ));
-
+              );
             }
             ),
         Text(
