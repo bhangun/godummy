@@ -1,7 +1,7 @@
 
-const String GO_RIDE_ICON="assets/ojek_orange.png";
-const String GO_CAR_ICON="assets/ojek_orange.png";
-const String GO_BLUEBIRD_ICON="assets/ojek_orange.png";
+const String GO_RIDE_ICON="assets/gojek.png";
+const String GO_CAR_ICON="assets/gocar.png";
+const String GO_BLUEBIRD_ICON="assets/gobluebird.png";
 const String GO_FOOD_ICON="assets/ojek_orange.png";
 const String GO_SEND_ICON="assets/ojek_orange.png";
 const String GO_DEALS_ICON="assets/ojek_orange.png";
@@ -21,7 +21,7 @@ const String GO_WITHDRAW_ICON="assets/go_withdraw.png";
 const String GO_VOUCHER_ICON="assets/go_voucher.png";
 const String GO_HELP_ICON="assets/go_help.png";
 const String GO_SCAN_ICON="assets/go_scan.png";
-const String GO_MORE_ICON="assets/go_more.png";
+const String GO_MORE_ICON="assets/menu_3.png";
 const String GO_MORE2_ICON="assets/go_more2.png";
 
 const String GO_RIDE="GO-RIDE";

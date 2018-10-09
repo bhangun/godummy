@@ -14,68 +14,114 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  String text = "asads";
+  // String text = "asads";
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          elevation: 0.0,
-          actions: <Widget>[
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              mainAxisSize: MainAxisSize.max,
-              children: [
-                Image.asset("assets/gopay_white.png"),
-                Row(
+        appBar: AppBar(elevation: 0.0, // agar bay
+            //backgroundColor: Colors.blue,// angan tidak muncul
+
+            actions: <Widget>[
+              Container(
+                height: 40.0,
+                width: 400.0,
+                child: Row(
+                  mainAxisSize: MainAxisSize.max,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
-                    Image.asset("assets/point_small.png"),
-                    _point()
+                    Image.asset("assets/gologo.png"),
+                    Row(children: <Widget>[
+                      _point(),
+                      Image.asset("assets/point_small.png")
+                    ])
                   ],
-                )
-              ],
-            )
-          ],
+                ),
+
+              ),
+
+              /*Row(
+
+                mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  Image.asset("assets/gologo.png"),
+                  Row(children: <Widget>[
+                    _point(),
+                    Image.asset("assets/point_small.png")
+                  ])
+                ],
+              )*/
+
+              /*GridView.count(
+              crossAxisCount: 2,
+              //controller: new ScrollController(keepScrollOffset: false),
+              shrinkWrap: true,
+              scrollDirection: Axis.vertical,
+              children: List.generate(2, (index) {
+                return Center(
+                  child: Row(
+                    children: <Widget>[
+                      Image.asset("assets/gologo.png"),
+                      Row(children: <Widget>[
+                        _point(),
+                        Image.asset("assets/point_small.png")
+                      ])
+                    ],
+                  ),
+                );
+              }),
+            ),*/
+              /*Container(
+                  decoration: BoxDecoration(color: Colors.grey),
+
+                  child: Row(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Image.asset("assets/gologo.png"),
+                      Row(children: <Widget>[
+                        _point(),
+                        Image.asset("assets/point_small.png")
+                      ])
+                    ],
+                  ))*/
+            ]
         ),
         bottomNavigationBar: _bottomBar(),
         backgroundColor: Color.fromARGB(255, 242, 242, 244),
         body:
             ListView(shrinkWrap: true, padding: EdgeInsets.all(0.0), children: [
-          Text(text),
           Container(
               decoration: BoxDecoration(color: Colors.white),
-              child: Container(
-                  child: Column(children: [
+              child: //Container(
+                  //margin: EdgeInsets.fromLTRB(0.0, 0.0, 10.0, 0.0),
+                  //child:
+                  Column(children: [
                 _banner(),
-                Row(
-                  mainAxisSize: MainAxisSize.max,
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    GoButton(label: GO_RIDE, img: GO_RIDE_ICON),
-                    GoButton(label: GO_CAR, img: GO_CAR_ICON),
-                    GoButton(label: GO_BLUEBIRD, img: GO_BLUEBIRD_ICON),
-                    GoButton(label: GO_MORE, img: GO_MORE_ICON)
-                  ],
+                GridView.count(
+                  crossAxisCount: 4,
+                  //controller: new ScrollController(keepScrollOffset: false),
+                  shrinkWrap: true,
+                  scrollDirection: Axis.vertical,
+                  children: List.generate(8, (index) {
+                    return Center(
+                      child: Column(
+                        children: <Widget>[
+                          GoButton(
+                              label: GO_RIDE, img: "assets/go_menu_$index.png")
+                        ],
+                      ),
+                    );
+                  }),
                 ),
-                Row(
-                  mainAxisSize: MainAxisSize.max,
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    GoButton(
-                      label: GO_SEND,
-                      img: GO_SEND_ICON,
-                    ),
-                    GoButton(label: GO_CAR, img: GO_CAR_ICON),
-                    GoButton(label: GO_BILLS, img: GO_BILLS_ICON),
-                    GoButton(label: GO_MORE, img: GO_MORE_ICON)
-                  ],
-                ),
-              ]))),
+              ]) //)
+              ),
           Container(
             decoration: BoxDecoration(color: Colors.white),
-            margin: EdgeInsets.all(20.0),
-            height: 150.0,
-            child: Column(children: [Text("mmm")]),
+            margin: EdgeInsets.fromLTRB(0.0, 20.0, 0.0, 0.0),
+            height: 250.0,
+            child: Column(children: [Text("Ini adalah dummy UI Gojek ")]),
           )
         ]));
   }
@@ -125,16 +171,24 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   Widget _mainBanner() {
-    return Row(
-      mainAxisSize: MainAxisSize.max,
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: <Widget>[
-        GoIcon(GO_TRANSFER, GO_TRANSFER_ICON),
-        GoIcon(GO_SCAN, GO_SCAN_ICON),
-        GoIcon(GO_TOPUP, GO_TOPUP_ICON),
-        //  GoIcon(GO_MORE, GO_MORE_ICON)
-        Snackmenu(),
-      ],
+
+    return GridView.count(
+      crossAxisCount: 4,
+      //controller: new ScrollController(keepScrollOffset: false),
+      shrinkWrap: true,
+      scrollDirection: Axis.vertical,
+      children: List.generate(4, (index) {
+        return Center(
+          child: Column(
+            children: <Widget>[
+            (index==3)?
+              Snackmenu():
+            GoIcon(GO_TRANSFER, "assets/menu_$index.png"),
+              //,
+            ],
+          ),
+        );
+      }),
     );
   }
 
@@ -144,28 +198,23 @@ class _MyHomePageState extends State<MyHomePage> {
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
-          IconButton(
-            icon: Icon(Icons.home),
-            onPressed: () {},
-          ),
-          IconButton(
-            icon: Icon(Icons.list),
-            onPressed: () {},
-          ),
-          IconButton(
-            icon: Icon(Icons.help),
-            onPressed: () {},
-          ),
-          IconButton(
-            icon: Icon(Icons.mail),
-            onPressed: () {},
-          ),
-          IconButton(
-            icon: Icon(Icons.person),
-            onPressed: () {},
-          ),
+          _bottomIcon("Home", "assets/go_01.png", null),
+          _bottomIcon("Orders", "assets/go_02.png", null),
+          _bottomIcon("Help", "assets/go_03.png", null),
+          _bottomIcon("Inbox", "assets/go_04.png", null),
+          _bottomIcon("Account", "assets/go_05.png", null),
         ],
       ),
+    );
+  }
+
+  Widget _bottomIcon(String label, asset, Function fun) {
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: <Widget>[
+        IconButton(icon: Image.asset(asset), onPressed: fun),
+        Text(label)
+      ],
     );
   }
 }

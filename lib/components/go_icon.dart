@@ -12,7 +12,7 @@ class GoIcon extends StatelessWidget{
     return Column(
       children: <Widget>[
         IconButton(icon: Image.asset(asset) , onPressed: _more ),
-        Text(label,style: TextStyle(color: Colors.white),)
+        Text(label,style: TextStyle(color: Colors.white))
       ],
     );
   }

@@ -3,7 +3,7 @@ import 'package:gojekdummy/components/go_button.dart';
 import 'package:gojekdummy/components/go_icon.dart';
 import 'package:gojekdummy/util/constants.dart';
 
-class Snackmenu extends StatelessWidget {
+class Goicon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -43,7 +43,7 @@ class Snackmenu extends StatelessWidget {
           child:
           Column(
             children: <Widget>[
-              IconButton(icon: Image.asset("assets/go-$index.png") , onPressed: null ),
+              IconButton(icon: Image.asset("assets/go_menu_0$index.png") , onPressed: null ),
               Text("aaa$index",style: TextStyle())
             ],
           )
