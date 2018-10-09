@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gojekdummy/components/go_icon.dart';
+import 'package:gojekdummy/components/goservices.dart';
 import 'package:gojekdummy/components/snackmore.dart';
 import 'package:gojekdummy/util/constants.dart';
 import 'package:gojekdummy/components/go_button.dart';
@@ -108,6 +109,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     return Center(
                       child: Column(
                         children: <Widget>[
+                          (index==7)?Goicon():
                           GoButton(
                               label: GO_RIDE, img: "assets/go_menu_$index.png")
                         ],

@@ -9,7 +9,7 @@ class Goicon extends StatelessWidget {
     return Column(
       children: <Widget>[
         IconButton(
-            icon: Image.asset(GO_MORE_ICON),
+            icon: Image.asset("assets/go_menu_7.png"),
             onPressed: () {
               showModalBottomSheet<void>(
                   context: context,
