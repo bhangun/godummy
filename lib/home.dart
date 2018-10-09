@@ -20,13 +20,12 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(elevation: 0.0, // agar bay
-            //backgroundColor: Colors.blue,// angan tidak muncul
+        appBar: AppBar(elevation: 0.0, // agar bayangan tidak muncul
 
             actions: <Widget>[
               Container(
                 height: 40.0,
-                width: 400.0,
+                width: 300.0,
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
