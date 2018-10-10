@@ -9,7 +9,7 @@ class Snackmenu extends StatelessWidget {
     return Column(
       children: <Widget>[
         IconButton(
-            icon: Image.asset(GO_MORE_ICON),
+            icon: Image.asset("assets/go_more.png"),
             onPressed: () {
               showModalBottomSheet<void>(
                   context: context,

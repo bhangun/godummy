@@ -1,28 +1,4 @@
 
-const String GO_RIDE_ICON="assets/gojek.png";
-const String GO_CAR_ICON="assets/gocar.png";
-const String GO_BLUEBIRD_ICON="assets/gobluebird.png";
-const String GO_FOOD_ICON="assets/ojek_orange.png";
-const String GO_SEND_ICON="assets/ojek_orange.png";
-const String GO_DEALS_ICON="assets/ojek_orange.png";
-const String GO_PULSA_ICON="assets/ojek_orange.png";
-const String GO_POINS_ICON="assets/ojek_orange.png";
-const String GO_NEARBY_ICON="assets/ojek_orange.png";
-const String GO_BILLS_ICON="assets/ojek_orange.png";
-const String GO_SHOPS_ICON="assets/ojek_orange.png";
-const String GO_MART_ICON="assets/ojek_orange.png";
-
-const String GO_HISTORY_ICON="assets/go_history.png";
-const String GO_SETTING_ICON="assets/go_setting.png";
-const String GO_TOPUP_ICON="assets/go_topup.png";
-const String GO_RECEIVE_ICON="assets/go_receive.png";
-const String GO_TRANSFER_ICON="assets/go_transfer.png";
-const String GO_WITHDRAW_ICON="assets/go_withdraw.png";
-const String GO_VOUCHER_ICON="assets/go_voucher.png";
-const String GO_HELP_ICON="assets/go_help.png";
-const String GO_SCAN_ICON="assets/go_scan.png";
-const String GO_MORE_ICON="assets/menu_3.png";
-const String GO_MORE2_ICON="assets/go_more2.png";
 
 const String GO_RIDE="GO-RIDE";
 const String GO_CAR="GO-CAR";
@@ -47,3 +23,35 @@ const String GO_VOUCHER="Voucher";
 const String GO_HELP="Help";
 const String GO_SCAN="Scan QR";
 const String GO_MORE="More";
+
+
+var caption = {
+  0: "GO-RIDE",
+  1 : "GO-CAR",
+  2 : "GO-BLUEBIRD",
+  3 : "GO-FOOD",
+  4 : "GO-SEND",
+  5 : "GO-DEALS",
+  6 : "GO-PULSA",
+  7 : "GO-POINTS",
+  8 : "GO-NEARBY",
+  9 : "GO-BILLS",
+  10 : "GO-SHOPS",
+  11 : "GO-MART"
+};
+
+var labelService = {
+  0 : "History",
+  1 : "Settings",
+  2 : "Top Up",
+  3 : "Receive",
+  4 : "Transfer",
+  5 : "Withdraw",
+  6 : "Voucher",
+  7 : "Help",
+  8 : "Scan QR",
+  9 : "More"
+};
+
+
+const API_KEY = "AIzaSyD8lxqNndKUqzYkCbPGWZ_iK5uu8RO-irg";

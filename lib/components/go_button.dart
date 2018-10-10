@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:gojekdummy/components/gomap.dart';
+import 'package:gojekdummy/util/constants.dart';
 
 class GoButton extends StatelessWidget {
-  final String label;
-  final String img;
-  final Color borderColor = Color.fromARGB(255, 242, 242, 244);
-  Function func;
 
-  GoButton({@required this.label, this.img, this.func});
+  final int index;
+  final BuildContext context;
+  final Color borderColor = Color.fromARGB(255, 242, 242, 244);
+
+  GoButton({@required this.index, this.context});
 
   BorderSide _border() {
     return BorderSide(color: borderColor, width: 1.0, style: BorderStyle.solid);
@@ -35,14 +37,41 @@ class GoButton extends StatelessWidget {
                       borderRadius:
                           BorderRadius.all(Radius.elliptical(19.0, 25.0)),
                       splashColor: Colors.grey,
-                      onTap: (){
-
-                      },
+                      onTap: action(index),
                       child: Image(
-                        image: AssetImage(img),
+                        image: AssetImage("assets/go_menu_$index.png"),
                         width: 30.0,
                       ))))),
-      Text(label)
+      Text(caption[index])
     ]);
   }
+
+  Function action(int index){
+    switch (index) {
+      case 0:
+        return () {
+          Navigator.push(
+              context,
+              new MaterialPageRoute(builder: (ctxt) => Goride())
+          );
+        };
+        break;
+      /*case 1:
+        return GO_RIDE;
+        break;
+      case 2:
+        return GO_RIDE;
+        break;
+      case 3:
+        return GO_RIDE;
+        break;
+      case 4:
+        return GO_RIDE;
+        break;*/
+      default:
+        return null;
+    }
+
+  }
+
 }

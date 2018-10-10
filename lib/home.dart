@@ -40,52 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
               ),
 
-              /*Row(
 
-                mainAxisSize: MainAxisSize.max,
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
-                  Image.asset("assets/gologo.png"),
-                  Row(children: <Widget>[
-                    _point(),
-                    Image.asset("assets/point_small.png")
-                  ])
-                ],
-              )*/
-
-              /*GridView.count(
-              crossAxisCount: 2,
-              //controller: new ScrollController(keepScrollOffset: false),
-              shrinkWrap: true,
-              scrollDirection: Axis.vertical,
-              children: List.generate(2, (index) {
-                return Center(
-                  child: Row(
-                    children: <Widget>[
-                      Image.asset("assets/gologo.png"),
-                      Row(children: <Widget>[
-                        _point(),
-                        Image.asset("assets/point_small.png")
-                      ])
-                    ],
-                  ),
-                );
-              }),
-            ),*/
-              /*Container(
-                  decoration: BoxDecoration(color: Colors.grey),
-
-                  child: Row(
-                    mainAxisSize: MainAxisSize.max,
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: <Widget>[
-                      Image.asset("assets/gologo.png"),
-                      Row(children: <Widget>[
-                        _point(),
-                        Image.asset("assets/point_small.png")
-                      ])
-                    ],
-                  ))*/
             ]
         ),
         bottomNavigationBar: _bottomBar(),
@@ -109,8 +64,8 @@ class _MyHomePageState extends State<MyHomePage> {
                       child: Column(
                         children: <Widget>[
                           (index==7)?Goicon():
-                          GoButton(
-                              label: GO_RIDE, img: "assets/go_menu_$index.png")
+                          GoButton(index: index,
+                          context: context)
                         ],
                       ),
                     );
